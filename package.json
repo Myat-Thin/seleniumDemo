@@ -1,0 +1,22 @@
+{
+  "name": "seleniumdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myat-Thin/seleniumDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myat-Thin/seleniumDemo/issues"
+  },
+  "homepage": "https://github.com/Myat-Thin/seleniumDemo#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.3.1"
+  }
+}
