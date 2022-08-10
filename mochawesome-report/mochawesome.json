@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 2,
-    "passes": 2,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-10T07:29:01.240Z",
-    "end": "2022-08-10T07:29:14.660Z",
-    "duration": 13420,
-    "testsRegistered": 2,
+    "start": "2022-08-10T07:47:59.451Z",
+    "end": "2022-08-10T07:48:23.177Z",
+    "duration": 23726,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2312f92e-e9bd-4fde-8250-9a11e1f361b4",
+      "uuid": "b7d0f0ea-01f5-4255-9301-8ede8b00463c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "97cdfb8c-a8a7-4daa-9d92-a8b7be11813f",
+          "uuid": "8d4d7152-5ab0-409b-a815-98def2650249",
           "title": "The Lists to do",
           "fullFile": "/home/myatthinkhine/Documents/AutomationGIT/seleniumDemo/test/MochaTesting.js",
           "file": "/test/MochaTesting.js",
@@ -38,7 +38,7 @@
               "title": "Successfully done",
               "fullTitle": "The Lists to do Successfully done",
               "timedOut": null,
-              "duration": 11027,
+              "duration": 15417,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,7 +47,7 @@
               "context": null,
               "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"Admin\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n        //await driver.quit()",
               "err": {},
-              "uuid": "28c7a745-1049-4e37-ad69-fbeabc02b26e",
+              "uuid": "c64eaad6-cad2-405d-8bbd-7e6a472b6d28",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -55,18 +55,18 @@
           ],
           "suites": [],
           "passes": [
-            "28c7a745-1049-4e37-ad69-fbeabc02b26e"
+            "c64eaad6-cad2-405d-8bbd-7e6a472b6d28"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11027,
+          "duration": 15417,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
         },
         {
-          "uuid": "fcb25e91-fbb1-480f-aba8-c787f9b62c11",
+          "uuid": "02386092-e11e-440c-ab84-1733f4915e32",
           "title": "Another Lists to do",
           "fullFile": "/home/myatthinkhine/Documents/AutomationGIT/seleniumDemo/test/ParallelTestingMocha.js",
           "file": "/test/ParallelTestingMocha.js",
@@ -77,7 +77,7 @@
               "title": "Successfully done another list",
               "fullTitle": "Another Lists to do Successfully done another list",
               "timedOut": null,
-              "duration": 11237,
+              "duration": 15275,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,7 +86,25 @@
               "context": null,
               "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"Admin\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n        //await driver.quit()",
               "err": {},
-              "uuid": "1f3d1826-dd4b-4d96-87ce-b6ca40cc1b65",
+              "uuid": "b9d2ea54-49b1-435b-9ae4-2457988e0296",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Testing invalid user login",
+              "fullTitle": "Another Lists to do Testing invalid user login",
+              "timedOut": null,
+              "duration": 7611,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"admins\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n    //await driver.quit()",
+              "err": {},
+              "uuid": "57fd4182-91e8-4589-9046-43d97fb8fa41",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -94,12 +112,13 @@
           ],
           "suites": [],
           "passes": [
-            "1f3d1826-dd4b-4d96-87ce-b6ca40cc1b65"
+            "b9d2ea54-49b1-435b-9ae4-2457988e0296",
+            "57fd4182-91e8-4589-9046-43d97fb8fa41"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11237,
+          "duration": 22886,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
