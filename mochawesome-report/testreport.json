@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-17T15:24:47.046Z",
-    "end": "2022-08-17T15:25:01.741Z",
-    "duration": 14695,
+    "start": "2022-08-11T03:38:00.391Z",
+    "end": "2022-08-11T03:38:13.561Z",
+    "duration": 13170,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b8eae5d2-3fad-465e-a2b3-2f4a5f62955e",
+      "uuid": "afc4cb3e-a986-4f57-90b1-c6a853204f0c",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fcdca7e4-108f-4f6e-9389-c6f0d3ff76ca",
+          "uuid": "0435614e-0fc2-499e-a139-94d4b645b6c2",
           "title": "The Lists to do",
           "fullFile": "/home/myatthinkhine/Documents/AutomationGIT/seleniumDemo/test/MochaTesting.js",
           "file": "/test/MochaTesting.js",
@@ -38,7 +38,7 @@
               "title": "Successfully done",
               "fullTitle": "The Lists to do Successfully done",
               "timedOut": null,
-              "duration": 11573,
+              "duration": 9206,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,7 +47,7 @@
               "context": null,
               "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"Admin\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n        //await driver.quit()",
               "err": {},
-              "uuid": "09e893d1-eabd-42c7-9522-d021a814c4ae",
+              "uuid": "c6685bd7-c800-4105-bc59-b079961e3fce",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -55,18 +55,18 @@
           ],
           "suites": [],
           "passes": [
-            "09e893d1-eabd-42c7-9522-d021a814c4ae"
+            "c6685bd7-c800-4105-bc59-b079961e3fce"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11573,
+          "duration": 9206,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
         },
         {
-          "uuid": "99268e11-a782-40ad-b4fa-9fb36530f960",
+          "uuid": "eae1bab9-d900-42a2-ac3a-cbe0e37677b6",
           "title": "Another Lists to do",
           "fullFile": "/home/myatthinkhine/Documents/AutomationGIT/seleniumDemo/test/ParallelTestingMocha.js",
           "file": "/test/ParallelTestingMocha.js",
@@ -77,7 +77,7 @@
               "title": "Successfully done another list",
               "fullTitle": "Another Lists to do Successfully done another list",
               "timedOut": null,
-              "duration": 11148,
+              "duration": 7316,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,7 +86,7 @@
               "context": null,
               "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"Admin\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n        //await driver.quit()",
               "err": {},
-              "uuid": "394f1493-4819-4c1c-a524-cfaf1cd065ea",
+              "uuid": "74062baf-8118-4d4f-a65c-bea75ee730fd",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -95,7 +95,7 @@
               "title": "Testing invalid user login",
               "fullTitle": "Another Lists to do Testing invalid user login",
               "timedOut": null,
-              "duration": 2919,
+              "duration": 5067,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -104,7 +104,7 @@
               "context": null,
               "code": "//Launch the browser\nlet driver = await new Builder().forBrowser(\"chrome\").build();\n//navigate to our apps\nawait driver.get(\"http://103.203.132.254:8888/\");\n//add to do\n//for login Section\nawait driver.findElement(By.name(\"username\")).sendKeys(\"admins\",Key.RETURN) //adding user name\nawait driver.findElement(By.name(\"password\")).sendKeys(\"password\",Key.RETURN) //adding password\n\n\n//to create the orders from sale team\nawait driver.get(\"http://103.203.132.254:8888/admin/sale-management/create\")\n//adding data\n//await driver.findElement(By.name(\"townships\")).sendKeys(\"Ahlone\",Key.RETURN)\n\n//closing the browser\n    //await driver.quit()",
               "err": {},
-              "uuid": "d3be9c61-4b9e-4049-98ac-a33853519788",
+              "uuid": "3111f46e-8d7c-4c2c-b2fe-6ef405b0f3c8",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -112,13 +112,13 @@
           ],
           "suites": [],
           "passes": [
-            "394f1493-4819-4c1c-a524-cfaf1cd065ea",
-            "d3be9c61-4b9e-4049-98ac-a33853519788"
+            "74062baf-8118-4d4f-a65c-bea75ee730fd",
+            "3111f46e-8d7c-4c2c-b2fe-6ef405b0f3c8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 14067,
+          "duration": 12383,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
@@ -141,7 +141,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "mochawesome",
+        "reportFilename": "testreport",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -151,7 +151,10 @@
       "version": "7.1.3"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "reportDir": "/home/myatthinkhine/Documents/AutomationGIT/seleniumDemo/mochawesome-report",
+        "reportFilename": "testreport"
+      },
       "version": "6.2.0"
     }
   }
