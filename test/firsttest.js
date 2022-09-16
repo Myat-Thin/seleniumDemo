@@ -18,8 +18,9 @@ async function example(){
     //to create the orders from sale team
     await driver.get("http://103.203.132.254:8888/admin/sale-management/create")
 
-    //adding data
-    //await driver.findElement(By.name("townships")).sendKeys("Ahlone",Key.RETURN)
+   //adding data
+   //await driver.findElement(By.xpath("//*[@id='vs1__combobox']/div[1]/input")).sendKeys("Bahan",Key.RETURN) //township for ygn
+   await driver.findElement(By.xpath("//*[@id='vs2__combobox']/div[1]/input")).sendKeys("Onl",Key.RETURN).click //Order Category
 
 
     //closing the browser

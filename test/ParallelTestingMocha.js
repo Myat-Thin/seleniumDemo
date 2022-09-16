@@ -40,40 +40,40 @@ describe("Another Lists to do",function(){
             await driver.get("http://103.203.132.254:8888/admin/sale-management/create")
 
             //adding data
-            //await driver.findElement(By.name("townships")).sendKeys("Ahlone",Key.RETURN)
+            await driver.findElement(By.xpath("//*[@id='vs2__combobox']/div[1]/input")).sendKeys("Onl",Key.RETURN).click //Order Category
 
 
             //closing the browser
         //await driver.quit()
     });
 
-    //invalid case
-    it("Testing invalid user login", async function(){
-        //Launch the browser
-        let driver = await new Builder().forBrowser("chrome").build();
+    // //invalid case
+    // it("Testing invalid user login", async function(){
+    //     //Launch the browser
+    //     let driver = await new Builder().forBrowser("chrome").build();
 
-        //navigate to our apps
-        await driver.get("http://103.203.132.254:8888/");
+    //     //navigate to our apps
+    //     await driver.get("http://103.203.132.254:8888/");
 
-        //add to do
-        //for login Section
-        await driver.findElement(By.name("username")).sendKeys("admins",Key.RETURN) //adding user name
-        await driver.findElement(By.name("password")).sendKeys("password",Key.RETURN) //adding password
-
-
-
-        //to create the orders from sale team
-        await driver.get("http://103.203.132.254:8888/admin/sale-management/create")
-
-        //adding data
-        //await driver.findElement(By.name("townships")).sendKeys("Ahlone",Key.RETURN)
+    //     //add to do
+    //     //for login Section
+    //     await driver.findElement(By.name("username")).sendKeys("admins",Key.RETURN) //adding user name
+    //     await driver.findElement(By.name("password")).sendKeys("password",Key.RETURN) //adding password
 
 
-        //closing the browser
-    //await driver.quit()
+
+    //     //to create the orders from sale team
+    //     await driver.get("http://103.203.132.254:8888/admin/sale-management/create")
+
+    //     //adding data
+    //     //await driver.findElement(By.name("townships")).sendKeys("Ahlone",Key.RETURN)
+
+
+    //     //closing the browser
+    // //await driver.quit()
+    // });
+
 });
-
-});
-
+//driver.findElement(By.xpath("//input[@id=\"vs2__combobox\"]/div[1]/input"))
 
 
